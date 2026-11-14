@@ -10,12 +10,20 @@ A hands-on Microsoft Azure cloud engineering project that deploys a static HTML/
 
 ```mermaid
 flowchart TD
-    U[Visitor's browser] -->|HTTPS| E[Azure static website endpoint]
-    E --> W[\$web blob container]
-    W --> I[index.html + embedded CSS]
-    RG[Resource group: rg-staticwebhosting-mark] -. organizes .-> SA[Storage account: stlab01mark2026]
+    U["Visitor's Browser"]
+    E["Azure Static Website Endpoint"]
+    W["$web Blob Container"]
+    I["index.html and CSS"]
+    RG["Resource Group"]
+    SA["Azure Storage Account"]
+    P["Azure Policy: Allowed Regions"]
+
+    U -->|"HTTPS"| E
+    E --> W
+    W --> I
+    RG -->|"Organizes"| SA
     SA --> W
-    P[Azure Policy: allowed regions] -. constrains deployment .-> SA
+    P -.->|"Restricts deployment regions"| SA
 ```
 
 | Component | Configuration |
