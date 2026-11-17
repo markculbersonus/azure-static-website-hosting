@@ -8,9 +8,7 @@ A hands-on Microsoft Azure cloud engineering project that deploys a static HTML/
 
 ## Architecture
 
-## Architecture
-
-![Azure Static Website Hosting Architecture](lab01-static-website-architecture.svg)
+![Azure Static Website Hosting Architecture](azure-static-website-architecture.svg)
 
 | Component | Configuration |
 | --- | --- |
