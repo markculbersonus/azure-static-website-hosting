@@ -8,23 +8,9 @@ A hands-on Microsoft Azure cloud engineering project that deploys a static HTML/
 
 ## Architecture
 
-```mermaid
-flowchart TD
-    U["Visitor's Browser"]
-    E["Azure Static Website Endpoint"]
-    W["$web Blob Container"]
-    I["index.html and CSS"]
-    RG["Resource Group"]
-    SA["Azure Storage Account"]
-    P["Azure Policy: Allowed Regions"]
+## Architecture
 
-    U -->|"HTTPS"| E
-    E --> W
-    W --> I
-    RG -->|"Organizes"| SA
-    SA --> W
-    P -.->|"Restricts deployment regions"| SA
-```
+![Azure Static Website Hosting Architecture](lab01-static-website-architecture.svg)
 
 | Component | Configuration |
 | --- | --- |
